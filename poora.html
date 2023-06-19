@@ -1,0 +1,1385 @@
+<html>
+
+<head>
+    <title>Poora </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .header {
+            height: 60px;
+            background-color: #001d4c;
+            color: white;
+            position: relative;
+            background: #001d4c;
+            font-family: 'Nunito', sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+
+        }
+
+        .vertical-center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .header div b {
+
+            font-family: 'Nunito', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+
+
+        }
+
+        .login {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .register {
+            text-decoration: none;
+            color: white;
+
+        }
+
+
+
+
+        .menu {
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+            height: 91px;
+            letter-spacing: 1px;
+            font-family: system-ui;
+            font-size: 13;
+            font-weight: 400;
+            line-height: 30px;
+            overflow: hidden;
+            background-color: #ffffff;
+            color: #666666;
+            position: unset;
+
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+        }
+
+
+
+
+
+        .nav-menu li {
+            padding: 10px;
+            margin-top: 11px;
+            display: inline-block;
+        }
+
+        .submenu li {
+            display: block !important;
+            padding: 0%;
+            border-bottom-style: solid;
+            border-width: thin;
+            border-color: #f2ecec;
+        }
+
+
+        .homecnt,
+        .homecnt1,
+        .homecnt2,
+        .homecnt3,
+        .homecnt4 {
+            display: none;
+            position: absolute;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 99;
+            min-width: 200px;
+            background-color: white;
+            padding: 10px 10px 10px 10px;
+        }
+
+        .home:hover .homecnt,
+        .pages:hover .homecnt1,
+        .donations:hover .homecnt2,
+        .event:hover .homecnt3,
+        .blog:hover .homecnt4 {
+            display: block;
+        }
+
+        .nav-menu a {
+            color: #000;
+        }
+
+        .nav-menu li:hover>a {
+            color: #bf3654;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 99;
+            overflow: visible;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+
+
+        }
+
+
+
+        a.donate-button {
+            background-color: #bf3654;
+            color: white;
+            text-align: center;
+            position: relative;
+            padding: 20px 30px;
+            text-decoration: none;
+            display: block;
+            height: 30px;
+            width: 130px;
+            margin-top: 10px;
+            margin-left: 100px
+        }
+
+
+        .butcnt {
+            font-family: 'Nunito', sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            padding: 18px;
+        }
+
+        .heart {
+            color: white;
+        }
+
+        .backgroundimage {
+            display: grid;
+            grid-template-columns: 100%;
+        }
+
+        .img1 {
+            position: relative;
+        }
+
+        .imgcnt {
+            width: 100%;
+        }
+
+        .imgcnt1 {
+            color: #faf6f6;
+            position: absolute;
+            font-family: math;
+            left: 100px;
+            top: 400px;
+            font-size: 60px;
+            animation: move 3s;
+            -webkit-animation: move 3s;
+            width: 100%;
+        }
+
+        .imgcnt2 {
+            color: #faf6f6;
+            position: relative;
+            font-size: 70;
+            font-family: 'FontAwesome';
+            letter-spacing: 3;
+        }
+
+        .imgcnt3 {
+            font-size: 15px;
+            position: relative;
+            top: -275;
+            color: white;
+            width: 100%;
+            line-height: 2.5;
+            font-family: cursive;
+            letter-spacing: 1;
+            animation: move1 3s;
+            width: 100%;
+            left: 100px;
+
+        }
+
+        @keyframes move1 {
+            from {
+                margin-left: -250%;
+               
+            }
+        }
+
+        @keyframes move {
+            from {
+                margin-left: 100%;
+                width: 100%
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%
+            }
+        }
+
+        .slide {
+            display: none;
+        }
+
+        .back {
+            color: white;
+            text-align: left;
+            margin-left: 50px;
+            font-size: 70px;
+            font-family: 'Times New Roman', Times, serif
+        }
+
+        .back1 {
+            color: white;
+            text-align: left;
+            margin-left: 50px;
+            font-size: 100px;
+
+        }
+
+        .discover {
+            color: black;
+            font-size: 15px;
+            text-align: center;
+            padding: 20px 35px 20px 35px;
+            border-color: rgb(122, 27, 43);
+            height: 50px;
+            width: 150px;
+            text-decoration: none;
+            background-color: rgb(248, 246, 246);
+            border-radius: 30px;
+            margin-left: 100px;
+            position: relative;
+            top: -225;
+            font-family: auto;
+            font-weight: bold;
+            animation: move2 2s infinite;
+        }
+
+        @keyframes move2 {
+
+            0%,
+            100% {
+                bottom: 0;
+            }
+
+            50% {
+                bottom: 100px;
+            }
+        }
+
+
+
+
+
+
+
+        .back3 {
+            height: 200px;
+            width: 150px;
+            background-color: rgb(234, 90, 114);
+            position: relative;
+            text-align: center;
+            color: white;
+            border-style: dotted;
+
+        }
+
+        .next {
+            color: black;
+            text-align: center;
+        }
+
+        .aboutsec {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            padding-top: 60px;
+            margin-left: 90px;
+        }
+
+        .abt-banner {
+
+            width: 257;
+            background-color: #bf3654;
+            position: absolute;
+            margin-left: 232px;
+            margin-top: 265px;
+            height: 220px;
+        }
+
+        .abt-bnr-cnt {
+            font-weight: 700;
+            color: #ffffff;
+
+            padding: 40px;
+            text-align: center;
+            font-size: 20px;
+            font-family: sans-serif;
+
+        }
+
+        .banner-border {
+            height: 180;
+            width: 200px;
+
+
+            margin-top: 20px;
+            border-style: dotted;
+            margin-left: 30px;
+            color: aliceblue;
+        }
+
+        .right {
+            position: relative;
+
+            top: -30;
+        }
+
+        .abt-rght {
+            font-family: 'Nunito', sans-serif;
+            font-size: 120px;
+            color: #bf3654;
+            opacity: 0.08;
+            position: relative;
+        }
+
+
+
+        .abt-headng {
+            font-size: 20px;
+            font-family: fantasy;
+            font-family: 'Nunito', sans-serif;
+            color: #bf3654;
+            font-weight: 800;
+            position: relative;
+            top: -85;
+            right: 10;
+        }
+
+
+
+        .para {
+            font-size: 35;
+            font-weight: 700;
+
+            position: relative;
+            top: -55;
+            font-family: cursive;
+        }
+
+        .para2 {
+
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 30px;
+            color: #666666;
+            position: relative;
+            top: -30px;
+        }
+
+
+
+
+        .seg {
+            display: grid;
+            grid-template-columns: 25% 25% 25%;
+
+        }
+
+        .segcnt1 {
+            font-weight: 800;
+            font-size: 20px;
+            font-family: sans-serif;
+
+        }
+
+        .segcnt2 {
+            font-size: 15px;
+            font-weight: 400;
+            position: relative;
+            color: #666666;
+            top: 15px;
+            font-family: cursive;
+        }
+
+        .button1 {
+            position: relative;
+
+            top: 70;
+            left: 60;
+            background-color: white;
+            border-style: solid;
+            border-radius: 30px;
+            padding: 20px 45px 20px 45px;
+            width: 200px;
+            text-align: center;
+            transition: all 0.50s;
+            border-color: #BF3654;
+        }
+
+        a.button1:hover {
+            background-color: #BF3654;
+            color: #faf6f6;
+        }
+
+
+        .res-sec {
+            display: grid;
+            grid-template-columns: 45% 55%;
+            position: relative;
+            top: -170px;
+            left: 90px;
+        }
+
+        .res-sec1 {
+            color: #666666;
+            font-family: cursive;
+            font-size: 20px;
+            border-right-style: groove;
+        }
+
+        .res-sec2 {
+            position: relative;
+            top: 20px;
+            font-size: 25;
+            font-family: 'Font Awesome 5 Brands';
+            letter-spacing: 3;
+            color: black;
+            line-height: 2;
+        }
+
+
+
+
+        .right-cnt {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 2;
+            color: #666666;
+            position: relative;
+            left: 50px;
+        }
+
+
+
+        a.right-cnt-2 {
+            color: #fff;
+
+            font-size: 17;
+
+            border-radius: 30px;
+
+            left: 50px;
+
+            position: relative;
+            top: 50px;
+            padding: 15px 40px 15px 40px;
+
+            background-color: #bf3654;
+            font-family: cursive;
+        }
+
+
+
+        a.right-cnt-2 i {
+            margin-left: 2px;
+        }
+
+        .photos {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-column-gap: 5px;
+            margin-top: 30px;
+            margin-left: 10%;
+
+
+
+        }
+
+        .photo-1 {
+            position: relative;
+        }
+
+        .photo-1-cnt {
+            color: #f2eded;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            position: absolute;
+            margin-bottom: 10pxp;
+            bottom: 10px;
+            left: 90px;
+        }
+
+        .photo-2 {
+            position: relative;
+
+        }
+
+        .photo-2-cnt {
+            color: #f2eded;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            position: absolute;
+            margin-bottom: 10pxp;
+            bottom: 10px;
+            left: 90px;
+        }
+
+        .photo-3 {
+            position: relative;
+
+        }
+
+        .photo-3-cnt {
+            color: #f2eded;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            position: absolute;
+            margin-bottom: 10pxp;
+            bottom: 10px;
+            left: 90px;
+        }
+
+        .pho-1-down-cnt {
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .pho-1-down-cnt1 {
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 10px;
+        }
+
+        .pho-cnt-grid {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-column-gap: 5px;
+            margin-top: 30px;
+            margin-left: 10%;
+        }
+
+        .progress1 {
+            font-size: large;
+
+            margin-top: 10px;
+        }
+
+        .pho-2-down-cnt1 {
+            position: relative;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .pho-3-down-cnt1 {
+            position: relative;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-s
+        }
+
+        .down {
+            background-color: aliceblue;
+            height: 400px;
+            margin-top: 70px;
+
+
+        }
+
+        .down1 {
+            font-size: 25px;
+            color: rgb(181, 14, 42);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+
+        }
+
+        .down2 {
+            font-size: 35px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .down3 {
+            font-size: 35px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
+            text-align: center;
+            margin-top: 8px;
+        }
+
+        .down4 {
+
+            height: 5px;
+            width: 90px;
+            border-radius: 30px;
+            margin-left: 46%;
+            background-color: rgb(197, 16, 46);
+            margin-top: 30px;
+
+        }
+
+        .downgrid {
+            display: grid;
+            grid-template-columns: 23% 23% 23% 23%;
+            grid-column-gap: 15px;
+            margin-top: 50px;
+            margin-left: 5%;
+        }
+
+        .downgrid1 {
+            background-color: white;
+            height: 300px;
+        }
+
+        .downgrid1-1 {
+            color: #990531;
+            font-size: 70px;
+            margin-left: 40%;
+            margin-top: 40px;
+        }
+
+        .downgrid1-2 {
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 15px;
+        }
+
+        .downgrid1-3 {
+            font-size: 15px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            color: grey;
+            margin-top: 15px;
+        }
+
+        .mission {
+            height: 500px;
+
+            margin-top: 150px;
+        }
+
+        .missiongrid {
+            display: grid;
+            grid-template-columns: 45% 45%;
+            grid-column-gap: 15px;
+            margin-top: 50px;
+            margin-left: 5%;
+        }
+
+        .missionimg1 {
+            position: relative;
+        }
+
+        .missionimg2 {
+            position: absolute;
+            margin-left: 40%;
+            bottom: -10px;
+            border: solid white 10px;
+
+        }
+
+        .missionplay {
+            position: absolute;
+            margin-left: 40%;
+            color: whitesmoke;
+            bottom: 45%;
+            font-size: 50px;
+        }
+
+        .missioncnt {
+            font-size: 20px;
+            color: #990531;
+            margin-left: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .missioncnt1 {
+            font-size: 35px;
+            color: black;
+            margin-top: 15px;
+            font-family: cursive;
+        }
+
+        .missioncnt2 {
+            font-size: 15px;
+            color: grey;
+            margin-top: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 30px;
+        }
+
+        .missioncnt3 {
+            font-size: 25px;
+            font-family: cursive;
+            color: black;
+            margin-top: 15px;
+
+
+        }
+
+        .missioncnt4 {
+            font-size: 15px;
+            color: grey;
+            margin-top: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 45px;
+        }
+
+        .missioncnt5 {
+            color: #090909;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            text-align: center;
+            padding: 13px;
+            border-color: #BF3654;
+            border-style: solid;
+            height: 50px;
+            width: 150px;
+            text-decoration: none;
+            line-height: 3;
+            border-radius: 20px;
+            background-color: rgb(247, 245, 245);
+        }
+
+        a.missioncnt5:hover {
+            background-color: #BF3654;
+            color: #fafafa;
+            transition: 0.50s;
+        }
+
+        .donate {
+            margin-top: 90px;
+            background-color: aliceblue;
+            height: 600px;
+        }
+
+        .donategrid {
+            display: grid;
+            grid-template-columns: 45% 45%;
+            grid-column-gap: 15px;
+            margin-top: 50px;
+            margin-left: 5%;
+        }
+
+        .donatecnt {
+            font-size: 25px;
+            color: rgb(149, 8, 32);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 25%;
+        }
+
+        .donatecnt1 {
+            font-size: 40px;
+            color: black;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            line-height: 50px;
+            margin-top: 30px;
+        }
+
+        .donatecnt2 {
+            position: relative;
+            ;
+            color: #e84646;
+            font-size: 60px;
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+
+        .donatecnt3 {
+            position: absolute;
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
+            margin-left: 80px;
+            bottom: -2px;
+        }
+
+        .donatecnt4 {
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: grey;
+        }
+
+        .boxright {
+            height: 425px;
+            width: 500px;
+            background-color: #fff;
+            margin-top: 20%;
+            margin-left: 60px;
+        }
+
+        .amount {
+            font-size: 17px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(72 69 69);
+            margin-top: 40px;
+            margin-left: 50px;
+        }
+
+        .amountcnt1 {
+            position: relative;
+            margin-top: 10px;
+        }
+.dollar{
+    position: relative;
+   
+    border-style: groove;
+    height: 35px;
+    width: 10px 10px 10px;
+    width: 30;
+    text-align: center;
+    left: 220;
+    top: -40;
+    background-color: #d0c9c9;
+}
+.fa-solid fa-dollar-sign{
+    left: 10px;
+}
+        .frequency {
+            position: absolute;
+            font-size: 17px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(72 69 69);
+            margin-left: 50%;
+            bottom: 45px;
+            left: 40px;
+        }
+
+        .frequencycnt1 {
+            position: absolute;
+        }
+
+        .cardnumber {
+            font-size: 17px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(72 69 69);
+            margin-top: 40px;
+            margin-left: 50px;
+        }
+        .fa-credit-card:before {
+    content: "\f09d";
+    /* border-style: groove; */
+    /* padding: 8px; */
+    position: relative;
+    left: -35;
+        }
+
+        .date1 {
+            font-size: 17px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(72 69 69);
+            margin-left: 50px;
+            margin-top: 30px;
+            position: relative;
+        }
+
+        .cvv {
+            font-size: 17px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(72 69 69);
+            position: absolute;
+            margin-left: 55%;
+            bottom: 3px;
+        }
+
+        .donatebox1 {
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            text-align: center;
+            padding: 13px;
+            border-color: rgb(122, 27, 43);
+            height: 50px;
+            width: 150px;
+            text-decoration: none;
+            background-color: rgb(193, 15, 45);
+            margin-left: 50px;
+            bottom: -10;
+            line-height: 7;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header tag start -->
+    <div class="header">
+        <div style="left:80px;" class="vertical-center">
+
+            <i class="fas fa-envelope-open" style="color: #bf3654;margin-right: 5px;"></i>
+            Info@gmail.com
+            <b style="margin-left: 10px;margin-right: 10px;">|</b>
+            <i class="fas fa-phone fa-rotate-270" style="color:#bf3654;margin-right: 5px;"></i>
+            +123 456 7890
+        </div>
+        <div style="right: 80px;" class="vertical-center">
+            <a href="#" class="login">Login</a>
+            <b style="margin-left: 10px;margin-right: 20px;">|</b>
+            <a href="#" class="register">Register</a>
+
+            <a href="#" class="icon1"><i class="fab fa-facebook-f" style="color: #fafafa;margin-left: 30px;"></i></a>
+            <a href="#" class="icon2"><i class="fab fa-twitter" style="color: #fafafa;margin-left: 20px;"></i></a>
+            <a href="#" class="icon3"><i class="fab fa-linkedin-in" style="color: #fafafa;margin-left: 20px;"></i></a>
+
+        </div>
+
+    </div>
+    <!-- header tag end -->
+    
+<!-- menu tag start -->
+    <div class="menu" id="navmenu">
+
+
+        <img src="C:\Users\RAJESH\OneDrive\Desktop\Poora - Fundraising &amp; Charity Template_files\logo-hibiscus.png"
+            style="margin-left: 80px;margin-top: 20px;">
+        <ul class="nav-menu" style="list-style: none;">
+            <li class="home">
+                <a href="#" style="text-decoration: none; "><b>HOME</b> <i class="fas fa-angle-down"></i>
+                    <ul class="submenu homecnt">
+                        <li><a href="#">Home Version One</a></li>
+                        <li><a href="#">Home Version Two</a></li>
+                        <li><a href="#">Home Version Three</a></li>
+                        <li><a href="#">Home Version Four</a></li>
+                    </ul>
+                </a>
+            </li>
+
+            <li class="Pages">
+                <a href="#" style="text-decoration: none; "><b>PAGES</b> <i class="fas fa-angle-down"></i>
+                    <ul class="submenu homecnt1">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Voluntter</a></li>
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Error Page</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li class="donations">
+                <a href="#" style="text-decoration: none; "><b>DONATIONS </b><i class="fas fa-angle-down"></i>
+                    <ul class="submenu homecnt2">
+                        <li><a href="#">Donations Version One</a></li>
+                        <li><a href="#">Donations Version Two</a></li>
+                        <li><a href="#">Donations Version Three</a></li>
+                        <li><a href="#">Donations Single</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li class="event">
+                <a href="#" style="text-decoration: none; "><b>EVENT</b> <i class="fas fa-angle-down"></i>
+                    <ul class="submenu homecnt3">
+                        <li><a href="#">Event Version One</a></li>
+                        <li><a href="#">Event Version Two</a></li>
+
+                    </ul>
+                </a>
+            </li>
+            <li class="blog">
+                <a href="#" style="text-decoration: none; "><b>BLOG </b><i class="fas fa-angle-down"></i>
+                    <ul class="submenu homecnt4">
+                        <li><a href="#">Blog Standard</a></li>
+                        <li><a href="#">Blog With Sidebar</a></li>
+                        <li><a href="#">Blog Grid Two Colum</a></li>
+                        <li><a href="#">Blog Grid Three Colum </a></li>
+                        <li><a href="#">Blog Single</a></li>
+                        <li><a href="#">Blog Single With Sidebar</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li class="contact">
+                <a href="#" style="text-decoration: none;"><b>CONTACT</b></a>
+            </li>
+        </ul>
+        <a href="#" class="donate-button">
+            <i class="far fa-heart"></i>
+            <b>DONATE</b>
+        </a>
+
+    </div>
+    <!-- menu tag end -->
+
+<!-- background img start -->
+    <div class="backgroundimage">
+        <div class="img1">
+            <img class="slide" src="assets/10.jpg" style="width: 100%;">
+
+            <div class="imgcnt">
+                <div class="imgcnt1">
+                    Join with us and
+                    <div class="imgcnt2">
+                        <b>Save The World</b>
+                    </div>
+                </div>
+
+                <div class="imgcnt3">
+                    Numerous ladyship so raillery humoured goodness received an. So narrow <br>formal length my
+                    highly longer afford oh. Tall neat he make.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="backgroundimage">
+        <img class="slide" src="assets/13.jpg" style="width: 100%;">
+        <div> -->
+            <a href="#" class="discover">Discover More</a>
+        </div>
+    </div>
+    <!-- background image end -->
+
+    <!-- about section start -->
+    <div class="aboutsec">
+        <img src="assets/1.jpg" style="height: 65%;">
+        <div class="abt-banner">
+            <div class="banner-border">
+                <div class="abt-bnr-cnt">
+
+                    More then <br>365 000+ <br>People Were<br> Helped
+                </div>
+            </div>
+        </div>
+<!-- about section right cnt -->
+        <div class="right">
+            <div class="abt-rght">
+                About</div>
+            <div class="abt-headng">ABOUT US</div>
+            <div class="para">We’re worldwide non-profit <br>charity ogranization.</div>
+            <div class="para2">Principles travelling frequently far delightful its especially acceptance.<br>
+                Happiness necessary.Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Labore nesciunt ad
+                suscipit iusto
+                dolorum quae recusandae quo illum libero<br> excepturi, provident facere. Delectus possimus
+                cupiditate
+                voluptatum.</div>
+            <div class="seg">
+                <div class="segcnt1">168K
+                    <div class="segcnt2">Plants Protected</div>
+                </div>
+                <div class="segcnt1">5M Ton
+                    <div class="segcnt2">Water Conserved</div>
+                </div>
+                <div class="segcnt1">37K Sqmi.
+                    <div class="segcnt2">Ocean Proteced</div>
+                </div>
+            </div>
+
+            <a href="#" class="button1"><b>Become A Voluntter</b></a>
+
+
+        </div>
+    </div>
+    <!-- about sectiom end -->
+
+<!-- recent cause start -->
+    <div class="res-sec">
+        <div class="res-sec1"><b>RECENT CAUSES</b>
+            <div class="res-sec2"><b>Donate to charity causes<br> around the world.</b>
+            </div>
+        </div>
+        <!-- recent cause right section start-->
+        <div class="right-sec">
+            <div class="right-cnt">
+                Everything melancholy uncommonly but solicitude inhabiting projection off.<br>
+                Connection stimulated
+                estimating excellence an to impression.</div>
+            <a href="#" class="right-cnt-2"><b>View All</b> <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <!-- recent cause end -->
+    
+<!-- grid photos start -->
+    <div class="photos">
+
+        <div class="photo-1">
+            <img src="assets/3.jpg" style="width: 100%;">
+            <div class="photo-1-cnt">
+                <b>CREATED :</b>22 DEC 2020
+            </div>
+        </div>
+        <div class="photo-2">
+            <img src="assets/1(1).jpg" style="width: 100%;">
+            <div class="photo-2-cnt">
+                <b>CREATED :</b>07 MAY 2020
+            </div>
+        </div>
+        <div class="photo-3">
+            <img src="assets/4.jpg" style="width: 100%;">
+            <div class="photo-3-cnt">
+                <b>CREATED :</b>24 MAY 2020
+            </div>
+        </div>
+    </div>
+    <!-- grid photos end -->
+
+    <!-- grid photos cnt start -->
+    <div class="pho-cnt-grid">
+        <div class="pho-1-down-cnt">
+            <B>food for syrian</B>
+            <div class="pho-1-down-cnt1">
+                Especially do at he possession insensible<br> manner sympathzis it
+            </div>
+            <div class="progress1">
+                <progress id="file" value="70" max="100"> 70% </progress><b>70%</b>
+            </div>
+        </div>
+        <div class="pho-2-down-cnt1">
+            <b>Give Education To Africa</b>
+
+            <div class="pho-1-down-cnt1">
+                Especially do at he possession insensible<br> manner sympathzis it
+            </div>
+            <div class="progress1">
+                <progress id="file" value="53" max="100"> 53% </progress><b>53%</b>
+            </div>
+        </div>
+        <div class="pho-3-down-cnt1">
+            <b>LifeSkills For Children</b>
+            <div class="pho-1-down-cnt1">
+                Especially do at he possession insensible<br> manner sympathzis it
+            </div>
+            <div class="progress1">
+                <progress id="file" value="24" max="100"> 24% </progress><b>24%</b>
+            </div>
+        </div>
+    </div>
+    <!-- grid photo cnt end -->
+
+    <!-- donate charity start -->
+    <div class="down">
+        <div class="down1">
+            <B> WHAT WE DO</B>
+        </div>
+        <div class="down2">
+            <b> We Donate to charity causes</b>
+        </div>
+        <div class="down3">
+            around the World.
+        </div>
+        <div class="down4">
+        </div>
+        <div class="downgrid">
+            <div class="downgrid1">
+                <div class="downgrid1-1">
+                    <i class="fa-solid fa-bottle-water"></i>
+                </div>
+                <div class="downgrid1-2">
+                    <b>Water Delivery</b>
+                </div>
+                <div class="downgrid1-3">
+                    Always length letter adieus <br> add number moment she.<br>Promise few compass.
+                </div>
+
+            </div>
+            <div class="downgrid1">
+                <div class="downgrid1-1">
+                    <i class="fa-solid fa-staff-snake"></i>
+
+                </div>
+                <div class="downgrid1-2">
+                    <b> Medicine Help</b>
+                </div>
+                <div class="downgrid1-3">
+                    Always length letter adieus <br> add number moment she.<br>Promise few compass.
+                </div>
+            </div>
+            <div class="downgrid1">
+                <div class="downgrid1-1">
+                    <i class="fa-solid fa-earth-oceania"></i>
+                </div>
+                <div class="downgrid1-2">
+                    <B>Save Plants</B>
+                </div>
+                <div class="downgrid1-3">
+                    Always length letter adieus <br> add number moment she.<br>Promise few compass.
+                </div>
+            </div>
+            <div class="downgrid1">
+                <div class="downgrid1-1">
+                    <i class="fa-solid fa-house-chimney"></i>
+                </div>
+                <div class="downgrid1-2">
+                    <b>We Build & Create</b>
+                </div>
+                <div class="downgrid1-3">
+                    Always length letter adieus <br> add number moment she.<br>Promise few compass.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- donate charity end -->
+
+    <!-- mission start -->
+    <div class="mission">
+        <div class="missiongrid">
+            <div class="missionimg1">
+                <img src="assets/77.jpg" style="width: 75%;">
+                <div class="missionimg2">
+                    <img src="assets/2(1).jpg" style="width: 100%;">
+                    <div class="missionplay">
+                        <i class="fa fa-play-circle" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="missioncnt">
+                <b>OUR MISSION</b>
+                <div class="missioncnt1">
+                    <b>We believe that we can save<br> more lifes with you.</b>
+                </div>
+                <div class="missioncnt2">
+                    Their end whole might began her. Behaved the comfort another fifteen eat.
+                    Partiality had his themselves ask pianoforte increasing discovered. So mr delay at since place
+                    whole above miles.
+                </div>
+                <div class="missioncnt3">
+                    <b> Our strategic priorities up to 2020 are:</b>
+                </div>
+                <div class="missioncnt4">
+                    <input type="checkbox">Protecting charities from abuse or mismanagement<br>
+                    <input type="checkbox">Enabling trustees to run their charities effectively<br>
+                    <input type="checkbox">Encouraging greater transparency and accountability
+                </div>
+
+                <a href="#" class="missioncnt5"><b>Join With Us</b></a>
+
+            </div>
+        </div>
+    </div>
+    <!-- mission  end -->
+
+    <!-- donate section start -->
+    <div class="donate">
+        <div class="donategrid">
+            <div class="donatecnt">
+                <b>DONATE TODAY</b>
+                <div class="donatecnt1">
+                    <b>Donate today and get involved to save the world</b>
+                    <div class="missioncnt2">
+                        Drawings sir gay together landlord had law smallest. Formerly welcomed attended declared met
+                        say unlocked. Jennings outlived no dwelling denoting in peculiar as he believed. Behaviour
+                        excellent middleton be as it curiosity departure ourselves. For looking two cousins regular
+                        amongst.
+                        <div class="donatecnt2">
+                            <i class="fa fa-phone-square" aria-hidden="true"></i>
+                            <div class="donatecnt3">
+                                Have any question about donation?
+                                <div class="donatecnt4">
+                                    Call Now: +123 3456789
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boxright">
+                <div class="amount">
+                    Amount
+                </div>
+                <div class="amountcnt1">
+                  
+                    
+                    <input type="text" style="height: 40px;margin-left: 50px;" placeholder="$129.00" ;>
+                    <i class="fa-solid fa-dollar-sign" style="color: #161717;position: relative;left: -25px;"></i>
+                
+
+                   
+                   
+                    <div class="frequency">
+                        Frequency
+
+                        <div class="frequencycnt1">
+                            <input type="text" style="height: 40px;margin-top: 5px;" placeholder="Once" ;>
+                        </div>
+                    </div>
+                </div>
+                  
+                
+                <div class="cardnumber">
+                    Card Number
+
+                    <div class="cardnumbercnt1">
+                        <input type="text" style="height:40px;width: 83%;margin-top: 10px;"placeholder="Valid Card Number">
+                        <i class="fa-solid fa-credit-card" style="color: #0a0a0a;"></i>
+                    </div>
+
+
+                </div>
+                <div class="date1">
+                    Expiration Date
+                    <div class="datecnt2">
+                        <input type="text" style="height:40px;width:90px;margin-top: 10px;" placeholder="MM">
+                        <input type="text" style="height:40px;width:90px;margin-top: 10px;margin-left:30px;"
+                            placeholder="YY">
+                    </div>
+                    <div class="cvv">
+                        CV Code
+                        <div class="cvvcnt1">
+                            <input type="text" style="height:40px;width:90px;margin-top:10px" placeholder="CV">
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="donatebox1"><b>Donate Now</b></a>
+
+
+            </div>
+        </div>
+        <!-- ḍonate section end -->
+
+        <script>
+            window.onscroll = function () { myFunction() };
+
+            var menu = document.getElementById("navmenu");
+            var sticky = menu.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    menu.classList.add("sticky")
+                } else {
+                    menu.classList.remove("sticky");
+                }
+            }
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("Slide", "slide2");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 3000);
+            }
+
+        </script>
+
+
+
+
+
+</body>
+
+
+
+</html>
